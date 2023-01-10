@@ -1,5 +1,5 @@
 package BinarySearchQuestions;
-// https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/description/
+// https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/description
 // Q: Count Negative Numbers in a Sorted Matrix.
 public class LeetCode1351 {
     public static void main(String[] args) {
