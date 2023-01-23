@@ -20,3 +20,23 @@ class Solution {
         return year;
     }
 }
+
+// class Solution {
+//     public int maximumPopulation(int[][] logs) {
+//         int[] arr = new int[101];
+//         for (int[] log : logs) {
+//             int birthIndex = log[0] - 1950;
+//             int deathIndex = log[1] - 1950;
+//             arr[birthIndex]++;
+//             arr[deathIndex]--;
+//         }
+//         int maxPop = 0;
+//         for (int i=1; i<arr.length; i++) {
+//             arr[i] += arr[i-1];
+//             if (arr[i] > arr[maxPop]) {
+//                 maxPop = i;
+//             }
+//         }
+//         return maxPop+1950;
+//     }
+// }
