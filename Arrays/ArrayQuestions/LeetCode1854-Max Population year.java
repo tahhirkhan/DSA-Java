@@ -3,10 +3,10 @@ class Solution {
     public int maximumPopulation(int[][] logs) {
         int[] arr = new int[101];
         for (int[] log : logs) {
-            int by = log[0] - 1950;
-            int dy = log[1] - 1950;
-            arr[by]++;
-            arr[dy]--;
+            int birthIndex = log[0] - 1950;
+            int deathIndex = log[1] - 1950;
+            arr[birthIndex]++;
+            arr[deathIndex]--;
         }
         int maxPop = arr[0];
         int year = 1950;
@@ -14,7 +14,7 @@ class Solution {
             arr[i] += arr[i-1];
             if (arr[i] > maxPop) {
                 maxPop = arr[i];
-                year = i+1950;
+                year = i + 1950;
             }
         }
         return year;
