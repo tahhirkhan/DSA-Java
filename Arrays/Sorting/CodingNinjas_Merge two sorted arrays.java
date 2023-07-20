@@ -15,12 +15,7 @@ public class Solution {
                 y--;
             }
             last--;
-
         }
-        // if (x < 0) {
-        //     arr1[last] = arr2[y];
-        // }
-
         return arr1;
     }
 }
